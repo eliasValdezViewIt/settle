@@ -1,0 +1,30 @@
+{
+  "name": "settle-challenge",
+  "version": "1.0.0",
+  "description": "settle-challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start:dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "author": "Elias Valdez",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/joi": "^15.1.1",
+    "@hapi/vision": "^6.1.0",
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "hapi-swaggered": "^3.1.0",
+    "hapi-swaggered-ui": "^3.1.0",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "nodemon": "^2.0.15"
+  }
+}
