@@ -9,8 +9,6 @@ const Pair = require('../../models/pairs')
 class Pairs {
     static async getRateByCurrency(currency, symbols = ['USD','ARS','BRL','EUR']){
         try {
-            console.log(' currency---->>', currency);
-            console.log('si ---->>', symbols);
             const { data } = await axios.get(`${fastForexUrl}fetch-multi`,{
                 params: {
                     from: currency,
