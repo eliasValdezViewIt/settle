@@ -5,8 +5,7 @@ require('./config')
 const pairs  = require('./routes/pairs');
 const Hapi = require('@hapi/hapi');
 const Joi = require("@hapi/joi")
-const Inert = require('@hapi/inert');
-const Vision = require('@hapi/vision');
+
 
 const port = process.env.PORT
 const host = process.env.HOST
@@ -31,7 +30,6 @@ const init = async () => {
 };
 
 process.on('unhandledRejection', (err) => {
-
     console.log(err);
     process.exit(1);
 });
