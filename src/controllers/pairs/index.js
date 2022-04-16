@@ -11,7 +11,7 @@ class Pairs {
         try {
             const { data } = await axios.get(`${fastForexUrl}fetch-multi`,{
                 params: {
-                    from: currency,
+                    from: currency.toUpperCase(),
                     to: symbols.join(','),
                     api_key: key,
                 }

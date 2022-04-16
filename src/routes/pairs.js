@@ -36,7 +36,7 @@ const routes = [
             },
             handler: (req) => {
                 const { pair } = req.query;
-                return Pairs.getPairs(pair)
+                return Pairs.getPairs(pair.toUpperCase())
             },
         }
     },{
@@ -52,7 +52,7 @@ const routes = [
             },
             handler: (req) => {
                 const { pair } = req.query;
-                return Pairs.getPairListByCurrency(pair)
+                return Pairs.getPairListByCurrency(pair.toUpperCase())
             },
         }
     },{
