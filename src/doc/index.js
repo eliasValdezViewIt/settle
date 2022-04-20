@@ -20,7 +20,7 @@ module.exports = [
         {
           plugin: require('hapi-swaggered-ui'),
           options: {
-            title: 'Example API',
+            title: 'Settle Challenge API',
             path: '/docs',
             swaggerOptions: {
               validatorUrl: null
